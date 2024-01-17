@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background: rgb(136,29,35);
+  background: #248DD5;
 }
 
 main {
@@ -130,7 +130,7 @@ a {
 
 
 footer {
-  background: rgb(136,29,35);
+  background: #41a1cc;
   color: #fff;
   padding: 20px;
   text-align: center;
