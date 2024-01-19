@@ -15,12 +15,46 @@ body {
   overflow-x: hidden;
 }
 
-.img-fluid {
-  max-width: 30% !important;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .img-fluid {
+    max-width: 100% !important;
+  }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .img-fluid {
+    max-width: 80% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .img-fluid {
+    max-width: 50% !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .img-fluid {
+    max-width: 50% !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .img-fluid {
+    max-width: 50% !important;
+  }
+}
+
 
 header {
   background: #248DD5;
+  height: fit-content;
 }
 
 main {
@@ -29,10 +63,6 @@ main {
   background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(65,161,204,1) 60%, rgba(65,161,204,1) 100%);
   background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(65,161,204,1) 60%, rgba(65,161,204,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41a1cc",endColorstr="#ececec",GradientType=1);
-  
-  -webkit-text-stroke-width: 0.2px; /* largura da borda */
-  -webkit-text-stroke-color: #fff; /* cor da borda */
-  font-size: 2em;
 }
 
 .title {
@@ -41,12 +71,12 @@ main {
 }
 
 .subtitle {
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 400!important;
+  font-size: 18px!important;
 }
 
 .zooming {
-  animation: zooming 1.25s ease infinite;
+  animation: zooming 1s ease infinite;
 }
 
 .lista {
@@ -109,10 +139,6 @@ li {
   object-fit: cover;
 }
 
-a {
-  font-weight: bold !important;
-  font-size: 1em !important;
-}
 
 .red-tag {
   background-color: #eb161a;
@@ -156,6 +182,7 @@ footer {
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  font-size: 1.5em;
 }
 
 .btn-call:hover {
