@@ -12,9 +12,11 @@
 
 html,
 body {
-  overflow-x: hidden;
-}
+  overflow: hidden;
+  min-height: 100vh;
 
+  margin: 0;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -51,18 +53,12 @@ body {
   }
 }
 
-
 header {
-  background: #248DD5;
+  /* background: #248dd5; */
   height: fit-content;
-}
-
-main {
-  background: rgb(236,236,236);
-  background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(65,161,204,1) 60%, rgba(65,161,204,1) 100%);
-  background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(65,161,204,1) 60%, rgba(65,161,204,1) 100%);
-  background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(65,161,204,1) 60%, rgba(65,161,204,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41a1cc",endColorstr="#ececec",GradientType=1);
+  .product-name {
+    font-size: 30px;
+  }
 }
 
 .title {
@@ -71,8 +67,8 @@ main {
 }
 
 .subtitle {
-  font-weight: 400!important;
-  font-size: 18px!important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
 }
 
 .zooming {
@@ -139,7 +135,6 @@ li {
   object-fit: cover;
 }
 
-
 .red-tag {
   background-color: #eb161a;
 }
@@ -154,19 +149,20 @@ li {
   color: #eb161a;
 }
 
-
 footer {
-  background: #41a1cc;
+  background: #183c5c;
   color: #fff;
-  padding: 20px;
   text-align: center;
-  margin-top: auto; /* Empurra o footer para a parte inferior da página */
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
 }
 
 .footer-text {
   font-size: 14px;
   opacity: 0.8;
-  margin-top: 10px;
 }
 
 .btn-call {
@@ -176,9 +172,9 @@ footer {
   font-size: 18px;
   font-weight: bold;
   padding: 20px 60px;
-  border: 2px solid #FFD700; /* Cor da borda amarela */
+  border: 2px solid #ffd700; /* Cor da borda amarela */
   color: #333;
-  background-color: #FFD700; /* Cor de fundo amarela */
+  background-color: #ffd700; /* Cor de fundo amarela */
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
@@ -187,7 +183,7 @@ footer {
 
 .btn-call:hover {
   background-color: #333; /* Cor de fundo branca ao passar o mouse */
-  color: #FFD700; /* Cor do texto amarela ao passar o mouse */
+  color: #ffd700; /* Cor do texto amarela ao passar o mouse */
   transform: scale(1.05); /* Efeito de escala ao passar o mouse */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
 }
