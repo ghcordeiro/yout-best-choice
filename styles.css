@@ -54,8 +54,10 @@ body {
 }
 
 header {
-  /* background: #248dd5; */
+  background: #3e0d6a;
   height: fit-content;
+  color: #fff;
+  font-family: "Calisto-MT-Bold_9068";
   .product-name {
     font-size: 30px;
   }
@@ -150,7 +152,7 @@ li {
 }
 
 footer {
-  background: #183c5c;
+  background: #3e0d6a;
   color: #fff;
   text-align: center;
 
